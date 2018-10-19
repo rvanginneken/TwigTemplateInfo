@@ -1,0 +1,26 @@
+ {
+  "name": "rvanginneken/twig-template-info",
+  "description": "Show which templates are used as comments in HTML.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "twig",
+    "template",
+    "comment"
+  ],
+  "authors": [
+    {
+      "name": "Roy Van Ginneken",
+      "email": "royvanginneken@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "twig/twig": ">=2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "RVanGinneken\\TwigTemplateInfo\\": "src/"
+    }
+  }
+}
