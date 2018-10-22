@@ -6,8 +6,8 @@ abstract class Template extends \Twig\Template
 {
     public function display(array $context, array $blocks = array()): void
     {
-        echo '<!-- Template start: '.$this->getTemplateName().' -->';
+        echo PHP_EOL.'<!-- Template start: '.$this->getTemplateName().' -->'.PHP_EOL;
         parent::display($context, $blocks);
-        echo '<!-- Template end: '.$this->getTemplateName().' -->';
+        echo PHP_EOL.'<!-- Template end: '.$this->getTemplateName().' -->'.PHP_EOL;
     }
 }
