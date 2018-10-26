@@ -8,8 +8,8 @@ abstract class Template extends \Twig\Template
     {
         $name = $this->getTemplateName();
 
-        echo PHP_EOL.'<!-- Start template: '.$name.' -->'.PHP_EOL;
+        echo PHP_EOL.'<!-- Start template: `'.$name.'` -->'.PHP_EOL;
         parent::display($context, $blocks);
-        echo PHP_EOL.'<!-- End template: '.$name.' -->'.PHP_EOL;
+        echo PHP_EOL.'<!-- End template: `'.$name.'` -->'.PHP_EOL;
     }
 }
