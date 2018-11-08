@@ -15,7 +15,7 @@ abstract class Template extends \Twig\Template
 
     public function displayBlock($name, array $context, array $blocks = array(), $useBlocks = true)
     {
-        if (isset($blocks[$name])) {
+        if (isset($blocks[$name]) && $name !== 'page_title') {
             $blockName = $name.'` from `'.$blocks[$name][0]->getSourceContext()->getPath();
 
             echo PHP_EOL.'<!-- Start block: `'.$blockName.'` -->'.PHP_EOL;
